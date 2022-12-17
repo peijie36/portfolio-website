@@ -1,0 +1,33 @@
+.skills__title {
+    position: relative;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.skills__container {
+    display: flex;
+    flex-direction: row;
+}
+
+.languages {
+    display: flex;
+    flex-direction: column;
+    flex: 50%;
+    justify-content: space-evenly;
+}
+
+.languages__item {
+    padding: 5px;
+}
+
+
+.tools {
+    display: flex;
+    flex-direction: column;
+    flex: 50%;
+    justify-content: space-evenly;
+}
+
+.tools__item {
+    padding: 5px;
+}

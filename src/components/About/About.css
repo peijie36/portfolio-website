@@ -4,6 +4,14 @@
     overflow: hidden;
 }
 
+.about h1 {
+    color: orange;
+}
+
+.about h4 {
+    margin-top: 1rem;
+}
+
 .about__container {
     text-align: center;
     height: 100%;
@@ -12,8 +20,11 @@
 
 /* CTA */
 .cta {
-    margin-top: 2rem;
+    margin-top: 1rem;
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
     gap: 1rem;
     justify-content: center;
 }
@@ -25,16 +36,9 @@
 /* SOCIALS */
 .socials {
     display: flex; 
-    flex-direction: row;
     align-items: center;
     gap: 0.7rem;
-    position: absolute;
     left: 0;
     bottom: 3rem;
-}
-
-.socials a {
-    width: 50px;
-    font-weight: 500;
 }
 
