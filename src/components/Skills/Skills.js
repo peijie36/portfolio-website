@@ -32,7 +32,7 @@ const Tools = {
 const Skills = () => {
   return (
     <div>
-      <h2 className="skills__title">SKILLS</h2>
+      <h2 className="skills__title">Skills</h2>
       <div className="skills__container">
         <section className="languages">
           {Languages.languages.map((skill) => (

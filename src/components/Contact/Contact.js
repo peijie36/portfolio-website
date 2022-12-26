@@ -1,9 +1,15 @@
-import React from 'react'
 import './Contact.css'
 
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <div>
+      <h2>Contact</h2>
+        <a href="/">
+          <span type='button' className='btn btn--primary'>
+            Email me
+          </span>
+        </a>
+    </div>
   )
 }
 

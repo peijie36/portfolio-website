@@ -1,7 +1,10 @@
 .about {
     height: 100vh;
-    padding-top: 7rem;
+    padding-top: 6rem;
     overflow: hidden;
+    text-align: center;
+    height: 100%;
+    position: relative;
 }
 
 .about h1 {
@@ -10,12 +13,6 @@
 
 .about h4 {
     margin-top: 1rem;
-}
-
-.about__container {
-    text-align: center;
-    height: 100%;
-    position: relative;
 }
 
 /* CTA */
