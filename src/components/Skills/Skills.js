@@ -1,4 +1,3 @@
-import React from "react";
 import { FaJava, FaHtml5, FaCss3Alt, FaReact, FaGitAlt } from "react-icons/fa";
 import {
   SiJavascript,
@@ -7,7 +6,6 @@ import {
   SiSqlite,
 } from "react-icons/si";
 import { DiDatabase } from "react-icons/di";
-
 import "./Skills.css";
 
 const Languages = {
