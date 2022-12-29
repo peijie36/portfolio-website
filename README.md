@@ -1,1 +1,1 @@
-My personal portfolio website written in React.
+My personal portfolio website built with React!
