@@ -26,7 +26,7 @@ html {
   --color-white: #fff;
   --color-light: #rgba(255, 255, 255, 0.6);
 
-  --transition: width 300ms ease-in;
+  --transition: 300ms ease-out;
 
   --container-width-lg: 75%;
   --container-width-md: 86%;

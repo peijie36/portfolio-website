@@ -1,3 +1,82 @@
 .contact {
-    margin-top: 6rem;
+    margin-top: 7rem;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact__title {
+    width: 45%;
+    align-items: flex-start;
+}
+
+
+.contact__description {
+    width: 30%;
+    align-self: center;
+    margin-top: 20px;
+}
+
+
+.contact__form {
+    align-self: center;
+    width: 50%;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    width: 100%;
+    max-width: 700px;
+    border-radius: 6px;
+}
+
+.contact__form input {
+    margin: 7px;
+    padding: 20px;
+    outline: black;
+    border-radius: 7px;
+    font-size: 1rem;
+}
+
+.contact__form label {
+    align-self: flex-start;
+    font-size: 1.1em;
+    margin-top: 1.1rem;
+}
+
+.full__name {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__form textarea {
+    resize: none;
+    border-radius: 7px;
+    font-size: 1.2rem;
+}
+
+.submit__btn {
+    padding: 15px;
+    font-size: 18px;
+    background-color: lightcoral;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 7px;
+    align-self: center;
+    box-shadow: inset 0 0 0 0 lightgreen;
+    transition: var(--transition);
+}
+
+.submit__btn:hover {
+    box-shadow: inset 150px 0 0 0 lightgreen;
 }

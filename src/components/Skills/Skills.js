@@ -1,4 +1,4 @@
-import { FaJava, FaHtml5, FaCss3Alt, FaReact, FaGitAlt } from "react-icons/fa";
+import { FaJava, FaHtml5, FaCss3Alt, FaReact, FaGitAlt, FaNodeJs } from "react-icons/fa";
 import {
   SiJavascript,
   SiVisualstudiocode,
@@ -24,7 +24,7 @@ const Tools = {
     { img: <FaGitAlt />, name: "Git" },
     { img: <FaReact />, name: "ReactJS" },
     { img: <SiFirebase />, name: "Firebase" },
-    { img: FaCss3Alt, name: "Node.js" },
+    { img: <FaNodeJs/>, name: "Node.js" },
     { img: <SiSqlite />, name: "SQLite3" },
   ],
 };

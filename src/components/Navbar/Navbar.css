@@ -16,3 +16,7 @@
     padding-right: 20px;
     color: black;
 }
+
+.navbar__item:hover {
+    transform: scale(1.1);
+}
