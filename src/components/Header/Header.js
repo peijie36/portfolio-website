@@ -3,10 +3,12 @@ import "./Header.css";
 
 const Header = () => {
   return (
-    <header className="header">
-      <h1 className="logo">PJ</h1>
-      <Navbar />
-    </header>
+    <div className="wrapper">
+      <header className="header">
+        <h1 className="logo">PJ</h1>
+        <Navbar />
+      </header>
+    </div>
   );
 };
 

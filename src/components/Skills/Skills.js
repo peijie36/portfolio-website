@@ -31,7 +31,7 @@ const Tools = {
 
 const Skills = () => {
   return (
-    <div>
+    <div id="skills">
       <h2 className="skills__title">Skills</h2>
       <div className="skills__container">
         <section className="languages">

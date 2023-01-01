@@ -2,7 +2,7 @@ import './Contact.css'
 
 const Contact = () => {
   return (
-    <div>
+    <div className="contact" id="contact">
       <h2>Contact</h2>
         <a href="/">
           <span type='button' className='btn btn--primary'>

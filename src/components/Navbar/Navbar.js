@@ -1,20 +1,29 @@
-import './Navbar.css'
+import "./Navbar.css";
 
 const Navbar = () => {
   return (
-    <nav className="nav">
-      <ul className="navbar">
-        <li className="navbar__item"><a href="/" className='link link--nav'>Projects</a></li>
-        <li className="navbar__item"><a href="/" className='link link--nav'>Skills</a></li>
-        <li className="navbar__item"><a href="/" className='link link--nav'>Contact</a></li>
+    <div className="nav">
+      <nav className="navbar">
+        <a href="#home" className="navbar__item">
+          Home
+        </a>
+        <a href="#projects" className="navbar__item">
+          Projects
+        </a>
+        <a href="#skills" className="navbar__item">
+          Skills
+        </a>
+        <a href="#contact" className="navbar__item">
+          Contact
+        </a>
         <a href="/">
-            <span type='button' className='btn btn--primary'>
-              Resume
-            </span>
-          </a>
-      </ul>
-    </nav>
-  )
-}
+          <span type="button" className="btn btn--primary">
+            Resume
+          </span>
+        </a>
+      </nav>
+    </div>
+  );
+};
 
-export default Navbar
+export default Navbar;
