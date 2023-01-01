@@ -10,46 +10,48 @@ import "./Skills.css";
 
 const Languages = {
   languages: [
-    { img: <FaJava />, language: "Java" },
-    { img: <FaHtml5 />, language: "HTML" },
-    { img: <FaCss3Alt />, language: "CSS" },
-    { img: <SiJavascript />, language: "JavaScript" },
-    { img: <DiDatabase />, language: "SQL" },
+    { img: <FaJava />, name: "Java" },
+    { img: <FaHtml5 />, name: "HTML" },
+    { img: <FaCss3Alt />, name: "CSS" },
+    { img: <SiJavascript />, name: "JavaScript" },
+    { img: <DiDatabase />, name: "SQL" },
   ],
 };
 
 const Tools = {
   tools: [
-    { img: <SiVisualstudiocode />, tool: "VSCode" },
-    { img: <FaGitAlt />, tool: "Git" },
-    { img: <FaReact />, tool: "ReactJS" },
-    { img: <SiFirebase />, tool: "Firebase" },
-    { img: FaCss3Alt, tool: "Node.js" },
-    { img: <SiSqlite />, tool: "SQLite3" },
+    { img: <SiVisualstudiocode />, name: "VSCode" },
+    { img: <FaGitAlt />, name: "Git" },
+    { img: <FaReact />, name: "ReactJS" },
+    { img: <SiFirebase />, name: "Firebase" },
+    { img: FaCss3Alt, name: "Node.js" },
+    { img: <SiSqlite />, name: "SQLite3" },
   ],
 };
 
 const Skills = () => {
   return (
-    <div id="skills">
+    <div className="skills" id="skills">
       <h2 className="skills__title">Skills</h2>
       <div className="skills__container">
-        <section className="languages">
+        <div className="languages">
+          <h2>Languages</h2>
           {Languages.languages.map((skill) => (
-            <li key={skill.language} className="languages__item">
+            <li key={skill.language} className="item">
               {skill.img}
-              {skill.language}
+              <h4>{skill.name}</h4>
             </li>
           ))}
-        </section>
-        <section className="tools">
+        </div>
+        <div className="tools">
+          <h2>Tools & Frameworks</h2>
           {Tools.tools.map((skill) => (
-            <li key={skill.tool} className="tools__item">
+            <li key={skill.tool} className="item">
               {skill.img}
-              {skill.tool}
+              <h4>{skill.name}</h4>
             </li>
           ))}
-        </section>
+        </div>
       </div>
     </div>
   );

@@ -1,9 +1,6 @@
 .about {
-    height: 100vh;
-    padding-top: 6rem;
-    overflow: hidden;
+    margin: 7rem;
     text-align: center;
-    height: 100%;
     position: relative;
 }
 
@@ -11,12 +8,8 @@
     color: orange;
 }
 
-.about h4 {
-    margin-top: 1rem;
-}
-
 .roles {
-    padding-top: 1em;
+    margin-top: 1.3rem;
 }
 
 /* CTA */
@@ -36,7 +29,6 @@
 
 /* SOCIALS */
 .socials {
-    display: flex; 
     font-size: 1.9em;
     gap: 0.7rem;
     left: 0;
