@@ -40,6 +40,7 @@
 }
 
 .contact__form label {
+    padding-left: 13px;
     align-self: flex-start;
     font-size: 1.1em;
     margin-top: 1.1rem;
@@ -64,9 +65,8 @@
 
 .submit__btn {
     padding: 15px;
-    font-size: 18px;
+    font-size: 1.2em;
     background-color: lightcoral;
-    border: 0;
     outline: none;
     cursor: pointer;
     width: 150px;
