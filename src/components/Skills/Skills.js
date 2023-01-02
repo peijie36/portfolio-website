@@ -37,7 +37,7 @@ const Skills = () => {
         <div className="languages">
           <h2>Languages</h2>
           {Languages.languages.map((skill) => (
-            <li key={skill.language} className="item">
+            <li key={skill.name} className="item">
               {skill.img}
               <h4>{skill.name}</h4>
             </li>
@@ -46,7 +46,7 @@ const Skills = () => {
         <div className="tools">
           <h2>Tools & Frameworks</h2>
           {Tools.tools.map((skill) => (
-            <li key={skill.tool} className="item">
+            <li key={skill.name} className="item">
               {skill.img}
               <h4>{skill.name}</h4>
             </li>

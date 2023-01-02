@@ -1,5 +1,5 @@
 import "./Contact.css";
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
 
 const Contact = () => {
   const [state, setState] = useState({
@@ -22,7 +22,14 @@ const Contact = () => {
         document.querySelector("#submit").classList.remove("complete");
       }
     }
+    console.log(state.firstName);
+    console.log(state.lastName);
+    console.log(state.email);
+    console.log(state.subject);
+    console.log(state.message);
+    console.log(complete);
   };
+  
 
   const handleSubmit = (event) => {
     alert("Your message is successfully sent!");
@@ -42,25 +49,26 @@ const Contact = () => {
           <section className="full__name">
             <div className="name">
               <label for="first">First name</label>
-              <input type="text" id="firstName" value={state.firstName} required></input>
+              <input type="text" id="firstName" value={state.firstName} onChange={handleChange} required></input>
             </div>
             <div className="name">
               <label for="last">Last name</label>
-              <input type="text" id="lastName" value={state.lastName}  required></input>
+              <input type="text" id="lastName" value={state.lastName} onChange={handleChange} required></input>
             </div>
           </section>
         </div>
         <label for="email">Email</label>
-        <input type="email" id="email" value={state.email}  required></input>
+        <input type="email" id="email" value={state.email} onChange={handleChange} required></input>
 
         <label for="subject">Subject</label>
-        <input type="text" id="subject" value={state.subject}  required></input>
+        <input type="text" id="subject" value={state.subject} onChange={handleChange} required></input>
         
         <label for="message">Message</label>
         <textarea
           value={state.message}
           id="message"
           rows="7"
+          onChange={handleChange}
         ></textarea>
         <button type="submit" id="submit" className="submit__btn" disabled={!complete}>Submit</button>
       </form>
