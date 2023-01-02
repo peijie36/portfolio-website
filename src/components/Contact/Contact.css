@@ -27,7 +27,7 @@
     flex-direction: column;
     padding: 2em;
     width: 100%;
-    max-width: 700px;
+    max-width: 650px;
     border-radius: 6px;
 }
 
@@ -76,7 +76,11 @@
     box-shadow: inset 0 0 0 0 lightgreen;
     transition: var(--transition);
 }
-
 .submit__btn:hover {
+    /* box-shadow: inset 150px 0 0 0 lightgreen; */
+    /* background-color: green; */
+}
+
+.complete {
     box-shadow: inset 150px 0 0 0 lightgreen;
 }

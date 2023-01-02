@@ -33,6 +33,10 @@
     justify-content: center;
 }
 
+.item h4 {
+    font-size: 1.2em;
+}
+
 .tools {
     max-width: 350px;
     background-color: lightcoral;
