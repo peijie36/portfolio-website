@@ -11,16 +11,9 @@ const Contact = () => {
   });
   const [complete, setComplete] = useState(false);
 
-  // const isFormValid = () => {
-  //   if(firstName != "" && lastName != "" && email != "" && subject != "" && message != "") {
-  //     return true;
-  //   }
-  //   return false;
-  // }
-
   const handleChange = (event) => {
-    setState({ ...state, [event.target.id]: event.target.value });
-    if(state.firstName != "" && state.lastName != "" && state.email != "" && state.subject != "" && state.message != "") {
+    setState({ ...state, [event.target.id]: event.target.value});
+    if(state.firstName.length != "" && state.lastName != "" && state.email != "" && state.subject != "" && state.message != "") {
         setComplete(true);
         document.querySelector("#submit").classList.add("complete");
     } else{
